@@ -23,7 +23,7 @@ app.use(express.static(__dirname + '/public'));
 
 // When your browser wants a page from a site, it will generally send an HTTP "get" request for it. (literally, asking the web server for the specific page or file).
 // For instance, say your website is 'www.pets.net' and someone types 'www.pets.net/kittens' into their browser.
-// To our server, this will look like a request for '/kittens', and we need to define how we want it to respond.
+// To our server, this will look like a request for '/ Your Answer Here!kittens', and we need to define how we want it to respond.
 // What we are doing here is telling our nodejs / Express server what to send back to the browser when it requests certain things.
 
 // Breaking it down:   app.get('/kittens', function(req, res){res.send("kittens!");});
@@ -34,7 +34,7 @@ app.use(express.static(__dirname + '/public'));
 
 
 app.get('/kittens', function(req, res){
-    res.send("Page under construction!");
+    res.send("This is not the page you are looking for");
 });
 
 app.get('/about', function(req, res){
@@ -57,7 +57,7 @@ app.get('/', function(req, res){
 
 // Wildcard catches requests for non-existent routes or files and responds with a 404 message (or an html page if you want to make a custom one!)
 app.get('*', function(req, res){
-    res.send("404");
+    res.send("This page does not exist");
 //    res.sendFile('404.html', options);
 });
 

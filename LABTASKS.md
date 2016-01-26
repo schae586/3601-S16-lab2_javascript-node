@@ -11,19 +11,23 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####What is the purpose of app.js? Explain what happens when a user is trying to access a page "kittens", when a user is trying to access the page "petForm", and when the user submits a form on "petForm". Explain what a "route" is.
 
-> Your Answer Here!
+> app.js is used for routing... and stuff. When trying to access the "kittens" page, the user is routed to "Page under construction." When trying to access "petForm" it routes to petForm.html. When the user submits a form on "petForm" it updates the console log with the new information. A route is when the browser sends a request to the web server and server returns something based on the request.
 
 #####What is the contents of the "public" folder? What is each of the html files there and how are they referenced in app.js?
 
-> Your Answer Here!
+> The contents are the coding files. The html files here are about.html, index.html, and petForm.html. In app.js is calling these by their links and sending the html pages to the browser when requested (except for kittens which sends "Page under Construction").
 
 #####In your project change the message that appears when the user is trying to access the page "kittens". Describe what you did and how it worked.
 
-> You get the idea...
+> We changed the message in res.send in app.js and had to restart the node server to see our changes.
 
 #####Also change the message that a user sees when they are trying to find a page that doesn't exist.
 
+>changed it!
+
 #####Describe what happens when you submit a form on petForm page. What are the form parameters in petForm? What is the method for the form? Where is the form submission handled in the project? How are parameters extracted? How is the resulting message generated? How is this different from accessing the page petForm the first time (to see the form)?
+
+>When you submit a form on petForm page, the browser sends a request to the server which returns the displayed name you typed in and the length of the pet name. The form parameters are name, type, width, placeholder.
 
 #####Where is client-side Javascript defined? Name file(s) in which it is used.
 

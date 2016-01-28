@@ -45,11 +45,15 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####Find the testing file, describe where it is located and what it is testing. Run karma (the testing engine) as specified in the Readme and describe results. Do not edit any files at this time.
 
-> The testing file is clientJavascript.spec.js and is located under the javascript folder (under the public folder).
+> The testing file is clientJavascript.spec.js and is located under the javascript folder (under the public folder). Results had one test fail and that was the one that was supposed to fail (expected 'kittens' to be 'not Kittens!').
 
 #####After having set up Travis CI with your forked project, play around the page for your project (build history, settings, branches, etc) and describe at least 3 features you think would be useful when troubleshooting a broken project.
 
+>Build history is incredibly useful because you can look at past commits/tests and see when a test failed. For example, if something failed after your last commit, you can go back and see what you changed in the commit to make it fail. Current is useful for seeing the most recent tests in a clearer format. The ability to limit concurrent jobs (under settings) might be nice for working in larger organizations.
+
 #####What was the build status of your project right after you got everything set up? Use Travis to find any problems, and describe what failed, if anything. (Which files, what lines, why did failure occur, etc.)
+
+>Build status was failing! The problem was that a test failed--it expected 'kittens' to be 'Not Kittens!'
 
 #####Fix any problems described in the previous question. Describe how you fixed them. Push your fix to GitHub and post a link to the passing build (from build history) here.
 

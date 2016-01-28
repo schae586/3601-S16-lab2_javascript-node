@@ -25,15 +25,21 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 > Changed it!
 #####Describe what happens when you submit a form on petForm page. What are the form parameters in petForm? What is the method for the form? Where is the form submission handled in the project? How are parameters extracted? How is the resulting message generated? How is this different from accessing the page petForm the first time (to see the form)?
 
->When you submit a form on petForm page, the browser sends a request to the server which returns the displayed name you typed in and the length of the pet name. The form parameters are name, type, width, placeholder.
+>When you submit a form on petForm page, the browser sends a request to the server which returns the displayed name you typed in and the length of the pet name. The form parameters are name, type, width, placeholder. The method for form is "post". The form submission is handled in app.post('/petForm', function(req, res) in app.js. The parameters are extracted from petForm.html. The resulting message are generated from the res.send in app.post. It is different because the submission updates the console where as the request to see the pet form page only returns information.
 
 #####Where is client-side Javascript defined? Name file(s) in which it is used.
+> It is defined in petForm and is used in app.js
 
 #####Where is server-side Javascript helper file defined? Where can it be used? Add a function to it and experiment with where you can call this function.
+> It is defined in app.js. It can be used in any of the html pages.
 
 #####What is the purpose of package.json file? What's in it, and what does it mean?
 
+>  file contains meta data about your app or module. Most importantly, it includes the list of dependencies to install from npm when running npm install. Got definition from https://github.com/vigetlabs/gulp-starter/wiki/What-is-package.json%3F
+
 #####What's in .gitgnore file? What's the purpose of it?
+
+> It informs git of which of which files are necessary and which ones it can ignore. The purpose is to avoid committing unnecessary files.
 
 ## Part #2: exploring testing
 

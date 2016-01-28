@@ -25,7 +25,7 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####Describe what happens when you submit a form on petForm page. What are the form parameters in petForm? What is the method for the form? Where is the form submission handled in the project? How are parameters extracted? How is the resulting message generated? How is this different from accessing the page petForm the first time (to see the form)?
 
-#####Where is client-side Javascript defined? Name file(s) in which it is used.
+#####Where is client-side Javascript defined? Name file(s) in which it is used.ajsldfkjasldfkj
 
 #####Where is server-side Javascript helper file defined? Where can it be used? Add a function to it and experiment with where you can call this function.
 

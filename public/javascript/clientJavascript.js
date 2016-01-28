@@ -26,6 +26,9 @@ var testStringLength = function(str){
  * @returns {string}  - returns "kittens"
  */
 var returnKittens = function(){
-    return "Not Kittens!";
+    return "kittens";
 };
 
+var returnNotKittens = function(){
+    return "Not Kittens!";
+};

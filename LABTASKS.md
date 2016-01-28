@@ -57,7 +57,7 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####Fix any problems described in the previous question. Describe how you fixed them. Push your fix to GitHub and post a link to the passing build (from build history) here.
 
->We added a new function called returnNotKittens in clientJavascript.js and then changed the test that should fail to test that should pass AND changed the function that it called to returnNotKittens.
+>We added a new function called returnNotKittens in clientJavascript.js and then changed the test that should fail to test that should pass AND changed the function that it called to returnNotKittens. (THIS IS A TEST)
 
 - Study jasmine testing syntax. Think of a Javascript function, describe its behavior by writing tests for it (this is test-driven development, or TDD). Add the function, run the tests. (Actually do this. Don't forget to commit your changes!)
 

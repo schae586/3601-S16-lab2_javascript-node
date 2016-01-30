@@ -46,14 +46,16 @@ app.get('/petForm', function(req, res){
     //console.log(req.query["newPet"]);
 });
 
-app.post('/gpaCalculator', function(req, res){
-    res.send(req.body.GradeLetter1 + " EXPERIMENTING " + req.body.GradeLetter2 + " EXPERIMENTING " + req.body.GradeLetter3 + " EXPERIMENTING " + req.body.Credit1 + " EXPERIMENTING " + req.body.Credit2 + " EXPERIMENTING " + req.body.Credit3);
-    console.log(req.body.GradeLetter1);
-});
-
 app.get('/gpaCalculator', function(req, res) {
     res.sendFile('gpaCalculator.html', options);
     //console.log(req.query["newPet"]);
+});
+
+app.post('/gpaCalculator', function(req, res){
+    res.send("Your GPA is " + tools.calculateGPA(req.body.Credit1, req.body.GradeLetter1, req.body.Credit2, req.body.GradeLetter2, req.body.Credit3, req.body.GradeLetter3));
+    //res.send(tools.gradeLetterConverter(req.body.GradeLetter2));
+    //res.send(tools.gradeLetterConverter(req.body.GradeLetter3));
+
 });
 
 

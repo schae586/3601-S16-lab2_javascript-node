@@ -46,11 +46,21 @@ app.get('/petForm', function(req, res){
     //console.log(req.query["newPet"]);
 });
 
-
-app.post('/petForm', function(req, res){
-    res.send(req.body.newPet + " String Length: " + tools.stringLength(req.body.newPet));
-    console.log(req.body.newPet);
+app.post('/GPA calculator', function(req, res){
+    res.send(req.body.Credit1 + " EXPERIMENTING " + tools.numChecker(req.body.Credit1));
+    console.log(req.body.Credit1);
 });
+
+
+//app.post('/petForm', function(req, res){
+//    res.send(req.body.newPet + " String Length: " + tools.stringLength(req.body.newPet));
+//    console.log(req.body.newPet);
+//});
+
+//app.post('/petForm', function(req, res){
+//    res.send(req.body.newPet2 + " String Length: " + tools.stringLength(req.body.newPet2));
+//    console.log(req.body.newPet2);
+//});
 
 app.get('/', function(req, res){
     res.sendFile('index.html', options);

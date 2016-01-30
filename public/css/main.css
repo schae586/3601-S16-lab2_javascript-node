@@ -11,3 +11,7 @@ img {
     margin-right: auto;
     padding: 10px;
 }
+
+.centerText{
+    text-align:center;
+}

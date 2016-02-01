@@ -23,18 +23,22 @@ describe('testing basic functions', function(){
     });
 
     it('letter Grade Converted', function(){
-        expect(returnNotKittens()).toBe("Not Kittens!");
+        expect(gradeLetterConverter("A")).toBe(4.00);
+        expect(gradeLetterConverter("A-")).toBe(3.67);
+        expect(gradeLetterConverter("B+")).toBe(3.33);
+        expect(gradeLetterConverter("B")).toBe(3.00);
+        expect(gradeLetterConverter("B-")).toBe(2.67);
+        expect(gradeLetterConverter("C+")).toBe(2.33);
+        expect(gradeLetterConverter("C")).toBe(2.00);
+        expect(gradeLetterConverter("C-")).toBe(1.67);
+        expect(gradeLetterConverter("D+")).toBe(1.33);
+        expect(gradeLetterConverter("D")).toBe(1.00);
+        expect(gradeLetterConverter("D-")).toBe(0.67);
+        expect(gradeLetterConverter("F")).toBe(0.00);
     });
 
-    it('every input included', function(){
-        expect(returnNotKittens()).toBe("Not Kittens!");
-    });
 
     it('test GPA Calculator accuracy', function(){
-        expect(returnNotKittens()).toBe("Not Kittens!");
-    });
-
-    it('Can we accept percentages?', function(){
         expect(returnNotKittens()).toBe("Not Kittens!");
     });
 

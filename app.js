@@ -52,7 +52,7 @@ app.get('/gpaCalculator', function(req, res) {
 });
 
 app.post('/gpaCalculator', function(req, res){
-    res.send("Your GPA is " + tools.calculateGPA(req.body.Credit1, req.body.GradeLetter1, req.body.Credit2, req.body.GradeLetter2, req.body.Credit3, req.body.GradeLetter3));
+    res.send(tools.calculateGPA(req.body.Credit1, req.body.GradeLetter1, req.body.Credit2, req.body.GradeLetter2, req.body.Credit3, req.body.GradeLetter3));
     //res.send(tools.gradeLetterConverter(req.body.GradeLetter2));
     //res.send(tools.gradeLetterConverter(req.body.GradeLetter3));
 

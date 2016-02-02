@@ -74,7 +74,7 @@ var calculateGPA = function(credit1, grade1, credit2, grade2, credit3, grade3){
     var gradeTwo = gradeLetterConverter(grade2);
     var gradeThree = gradeLetterConverter(grade3);
     //return "Grade1 " + gradeOne + "Grade2 " + gradeTwo + "Grade3 " + gradeThree + "Credit1 " + credit1 + "Credit2 " + credit2 + "Credit3 " + credit3;
-    return "Actual GPA " + ((gradeOne * parseInt(credit1)) + (gradeTwo * parseInt(credit2)) + (gradeThree * parseInt(credit3))) / (parseInt(credit1) + parseInt(credit2) + parseInt(credit3));
+    return "Your GPA is " + (((gradeOne * parseInt(credit1)) + (gradeTwo * parseInt(credit2)) + (gradeThree * parseInt(credit3))) / (parseInt(credit1) + parseInt(credit2) + parseInt(credit3))).toFixed(2);
 
 }
 
